@@ -4,7 +4,6 @@
         <textarea :id="id" class="form-control" :ref="id"></textarea>
 
         <input type="file" ref="imageInput" @change="insertMediaIntoEditor" style="display: none">
-        <vue-full-page-loader :loading="processing"></vue-full-page-loader>
     </div>
 </template>
 
@@ -64,7 +63,7 @@
         name: "vue-tinymce",
 
         props: {
-            options: {
+            dataOptions: {
                 type: Object,
                 default: () => {
                 }
@@ -85,6 +84,7 @@
         data() {
             return {
                 id: 'vue-tinymce-' + Date.now(),
+                options: {},
                 editor: null,
                 isTyping: false,
                 editorActive: false,
@@ -106,8 +106,7 @@
             if (!window.tinymce) {
                 return console.warn("TinyMCE not available")
             }
-            
-            this.options = Object.assign(defaultOptions, this.options);
+        
 
             this.init();
         },
@@ -120,7 +119,8 @@
             init() {
                 let vm = this;
 
-                this.options = Object.assign(defaultOptions, this.options, {
+                this.options = Object.assign(defaultOptions, this.dataOptions, {
+                    selector: 'textarea#' + this.id,
                    init_instance_callback: editor => {
                         this.editor = editor;
                         this.editor.on('focus', e => vm.editorActive = true);

@@ -1,5 +1,4 @@
 export default {
-    selector: 'textarea#' + this.id,
     inline: false,
     theme: "modern",
     menubar: false,

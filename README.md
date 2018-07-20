@@ -9,8 +9,17 @@
     v-model="content"></vue-wysiwyg>
 ```
 
-Js
-```js
+JS
+``` js
 import VueWysiwyg from '@gurinder/vue-wysiwyg-tinymce';
 Vue.component('vue-wysiwyg', VueWysiWyg)
+
+
+// Copy tinymce css and themes files to your public folder from node modules
+'tinymce/themes' => '/js/tinymce/themes'
+'tinymce/skins/lightgray' => '/js/tinymce/skins'
+'tinymce/skins/' => '/js/tinymce/skins'
+'tinymce/plugins/codesample' => '/chunks/plugins/codesample'
+'tinymce/plugins/codesample/css/prism.css' => '/js/plugins/codesample/css/prism.css'
+
 ```

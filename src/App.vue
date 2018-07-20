@@ -1,17 +1,17 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <HelloWorld/>
+    <wysiwyg file-upload-url="/"></wysiwyg>
   </div>
 </template>
 
 <script>
-import VueWysiwyg from './components/index.js'
+import wysiwyg from './components/wysiwyg.vue'
 
 export default {
-  name: 'App',
+  name: 'app',
   components: {
-    VueWysiwyg
+    wysiwyg
   }
 }
 </script>
