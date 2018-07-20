@@ -6,12 +6,12 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import VueWysiwyg from './components/index.js'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    VueWysiwyg
   }
 }
 </script>
