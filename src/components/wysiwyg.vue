@@ -60,7 +60,7 @@
     import defaultOptions from './defaultOptions.js';
 
     export default {
-        name: "vue-tinymce",
+        name: "vue-wysiwyg",
 
         props: {
             dataOptions: {
