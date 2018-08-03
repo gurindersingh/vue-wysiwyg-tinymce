@@ -8,7 +8,7 @@ export default {
     "searchreplace wordcount visualblocks visualchars code fullscreen " +
     "insertdatetime media nonbreaking table contextmenu directionality template " +
     "paste textcolor colorpicker toc help emoticons hr",
-    toolbar1: "formatselect | bold italic link  strikethrough  forecolor backcolor | numlist bullist outdent indent | alignleft aligncenter alignright alignjustify | removeformat",
+    toolbar1: "formatselect | bold italic link underline strikethrough  forecolor backcolor | numlist bullist outdent indent | alignleft aligncenter alignright alignjustify | removeformat",
     toolbar2: "image uploadImage media table hr insertdatetime preview | print | fullscreen",
     fontsize_formats: "8px 10px 12px 14px 16px 18px 20px 22px 24px 26px 28px 30px 34px 38px 42px 48px 54px 60px",
     content_css: [
